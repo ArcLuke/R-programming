@@ -1,4 +1,4 @@
-complete <- function(directory, id) 
+complete <- function(directory, id = 1:332) 
 {	
 	##Intializing the variables 
 	result  <- data.frame(id=numeric(0),nobs=numeric(0))
@@ -24,5 +24,5 @@ complete <- function(directory, id)
 		complete <- c(complete,nrow(z))
 	}
 	result  <- data.frame(id=file,nobs=complete)
-	print(result)     
+	result    
 }
